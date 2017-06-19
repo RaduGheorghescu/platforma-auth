@@ -18,10 +18,15 @@ public class Role {
 
     private String roleName;
 
-    @ManyToOne
+    @OneToMany
     private List<User> users;
 
+    public Role() {
+        this.id = null;
+    }
+
     public Role(String roleName) {
+        this();
         this.roleName = roleName;
     }
 
