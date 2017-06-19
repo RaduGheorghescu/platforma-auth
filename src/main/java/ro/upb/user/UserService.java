@@ -14,6 +14,13 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    //Functii rep
+    public void addUser(User user){
+        userRepository.save(user);
+    }
+
+    //Functii cautare
+
     public User findByEmail(String email){
         return userRepository.findByEmail(email);
     }

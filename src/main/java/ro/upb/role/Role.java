@@ -21,6 +21,10 @@ public class Role {
     @ManyToOne
     private List<User> users;
 
+    public Role(String roleName) {
+        this.roleName = roleName;
+    }
+
     public Long getId() {
         return id;
     }

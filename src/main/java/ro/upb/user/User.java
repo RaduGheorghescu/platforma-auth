@@ -42,7 +42,7 @@ public class User {
         id = null;
     }
 
-    public User(String password, String firstName, String lastName, String email, Role role) {
+    public User(String email, String password, String firstName, String lastName, Role role) {
         this();
         this.setPassword(password);
         this.firstName = firstName;
